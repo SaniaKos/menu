@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu Prime</title>
+  <title>Prime Menu</title>
   <style>
     body {
       margin: 0;
@@ -46,219 +46,136 @@
       border: 2px solid gold;
       border-radius: 10px;
     }
-  .tea-grid {
+    .tea-grid {
       display: grid;
-      grid-template-columns: 1fr 80px 2fr; /* назва | ціна | опис */
+      grid-template-columns: 1fr 80px 2fr;
       column-gap: 20px;
       row-gap: 8px;
       align-items: start;
     }
+    .tea-name { font-weight: 500; text-align: left; }
+    .tea-price { text-align: right; font-weight: 500; }
+    .tea-desc { font-size: 13px; color: #ccc; font-style: italic; }
+    .tea-item { display: contents; }
 
-    .tea-name {
-      font-weight: 500;
-      text-align: left;
+    @media (max-width: 420px) {
+      .menu { width: 95vw; padding: 20px; border-width: 1.5px; }
     }
-
-    .tea-price {
-      text-align: right;
-      font-weight: 500;
-    }
-
-    .tea-desc {
-      font-size: 13px;
-      color: #ccc;
-      font-style: italic;
-    }
-
-    .tea-item {
-      display: contents;
-    }
-@media (max-width: 420px) {
-  .menu {
-    width: 95vw;        
-    padding: 20px;       
-    border-width: 1.5px;   }
-}
   </style>
 </head>
 <body>
   <h1>MENU</h1>
   <div class="menu">
-   <div class="category">KOKTAJLE:</div>
-<div class="tea-grid">
-  <div class="tea-item">
-    <div class="tea-name">Aperol Spritz</div>
-    <div class="tea-price">30 zł</div>
-    <div class="tea-desc">
-      Aperol, Prosecco, Pomarańcza, Lód i woda gazowana
-    </div>
-  </div>
 
-  <div class="tea-item">
-    <div class="tea-name">Sex on the Beach</div>
-    <div class="tea-price">32 zł</div>
-    <div class="tea-desc">
-      Wódka, Likier brzoskwiniowy, Sok z pomarańczy/ananasu, Syrop żurawinowy
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Cuba Libre</div>
-    <div class="tea-price">28 zł</div>
-    <div class="tea-desc">
-      Biały rum, Sok z limonki, 2–3 kawałki limonki, Lód
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Cosmopolitan</div>
-    <div class="tea-price">32 zł</div>
-    <div class="tea-desc">
-      Wódka, Triple sec, Sok z cytryny, Syrop żurawinowy 
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Mojito</div>
-    <div class="tea-price">30 zł</div>
-    <div class="tea-desc">
-      Biały rum, Gałązka mięty, 2–3 kawałki limonki, Woda gazowana, Cukier trzcinowy
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Tequila Sunrise</div>
-    <div class="tea-price">30 zł</div>
-    <div class="tea-desc">
-      Tequila, Sok pomarańczowy, Grenadina 
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Margarita</div>
-    <div class="tea-price">32 zł</div>
-    <div class="tea-desc">
-      Tequila, Triple sec, Syrop cukrowy, Sok cytrynowy, Kawałek limonki, Brzeg z soli
-    </div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Rafaello</div>
-    <div class="tea-price">34 zł</div>
-    <div class="tea-desc">
-      Baileys, Syrop waniliowy lub cukrowy, Likier kokosowy Malibu, Wiórki kokosowe wokół szklanki, Lód
-    </div>
-  </div>
-</div>
-
-    <div class="category">PIWO:</div>
-    <div class="menu-item"><span>Corona extra</span><span>20 zł</span></div>
-    <div class="menu-item"><span>Blanse</span><span>20 zł</span></div>
+    <!-- BEER -->
+    <div class="category">Beer</div>
+    <div class="menu-item"><span>Corona</span><span>20 zł</span></div>
     <div class="menu-item"><span>Miller</span><span>20 zł</span></div>
+    <div class="menu-item"><span>Blanc</span><span>20 zł</span></div>
 
-    <div class="category">NAPOJE:</div>
-    <div class="menu-item"><span>Cola</span><span>16 zł</span></div>
+    <!-- SOFT DRINKS -->
+    <div class="category">Soft Drinks</div>
+    <div class="menu-item"><span>Coca Cola</span><span>16 zł</span></div>
+    <div class="menu-item"><span>Coca Cola Zero</span><span>16 zł</span></div>
     <div class="menu-item"><span>Fanta</span><span>16 zł</span></div>
     <div class="menu-item"><span>Sprite</span><span>16 zł</span></div>
-    <div class="menu-item"><span>Sok Jabłkowy</span><span>16 zł</span></div>
-    <div class="menu-item"><span>Sok Pomarańczowy</span><span>16 zł</span></div>
+    <div class="menu-item"><span>Apple Juice</span><span>16 zł</span></div>
+    <div class="menu-item"><span>Orange Juice</span><span>16 zł</span></div>
     <div class="menu-item"><span>Kinley Tonic</span><span>16 zł</span></div>
     <div class="menu-item"><span>Fuze Tea Peach</span><span>16 zł</span></div>
-    <div class="menu-item"><span>Monster</span><span>20 zł</span></div>
     <div class="menu-item"><span>Red Bull</span><span>18 zł</span></div>
-    <div class="menu-item"><span>Kropla woda (gaz, nie gaz)</span><span>14 zł</span></div>
+    <div class="menu-item"><span>Red Bull Zero</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Still Water (Kropla)</span><span>14 zł</span></div>
+    <div class="menu-item"><span>Sparkling Water (Kropla)</span><span>14 zł</span></div>
 
-    <div class="category">KAWA:</div>
-    <div class="menu-item"><span>Americano</span><span>18 zł</span></div>
-    <div class="menu-item"><span>Cappuccino</span><span>18 zł</span></div>
+    <!-- ALCOHOL SHOTS -->
+    <div class="category">Alcohol Shots</div>
+    <div class="menu-item"><span>Vodka (Finlandia)</span><span>16 zł</span></div>
+    <div class="menu-item"><span>Whiskey (Jack Daniel’s)</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Tequila</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Jägermeister</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Rum</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Prosecco</span><span>28 zł</span></div>
+    <div class="menu-item"><span>Gin</span><span>18 zł</span></div>
 
- <div class="category">Przekąski:</div>
+    <!-- MIXED SHOTS -->
+    <div class="category">Shots</div>
+    <div class="menu-item"><span>B52 (Baileys, Kahlua, Triple Sec, Grenadine)</span><span>28 zł</span></div>
+    <div class="menu-item"><span>Silver Bullet (Tequila, Kahlua, Lemon)</span><span>25 zł</span></div>
+    <div class="menu-item"><span>Toxic (Kahlua, Baileys, Midori)</span><span>28 zł</span></div>
+    <div class="menu-item"><span>Fuzzy (Jägermeister, Peach Liqueur, Cranberry Syrup)</span><span>25 zł</span></div>
+    <div class="menu-item"><span>Jägerbomb (Jägermeister, Energy Drink)</span><span>36 zł</span></div>
+    <div class="menu-item"><span>Jägermeister x2</span><span>50 zł</span></div>
+    <div class="menu-item"><span>Orgasm (Baileys, Kahlua, Jack Daniels)</span><span>29 zł</span></div>
+    <div class="menu-item"><span>Kiss (Grenadine, Baileys, Whipped Cream)</span><span>25 zł</span></div>
+    <div class="menu-item"><span>Sweet Jack (Jack Daniel’s, Caramel Syrup, Whipped Cream)</span><span>25 zł</span></div>
+    <div class="menu-item"><span>Peach Cream (Peach Syrup, Kahlua, Vodka)</span><span>25 zł</span></div>
 
-    <div class="menu-item"><span>Lay's Oven Baked(Yoghurt with herbs/Grilled paprika)</span><span>16 zł</span></div>
-    <div class="menu-item"><span>ser warkocz(Сыр косичка)</span><span>12 zł</span></div>
- <div class="menu-item"><span>Felix Orzeszki</span><span>18 zł</span></div>
-    <div class="menu-item"><span>Paluszki Słone</span><span>8 zł</span></div>
- <div class="menu-item"><span>Knoppers Dark</span><span>8 zł</span></div>
-    <div class="menu-item"><span>Knoppers Kokosowy</span><span>8 zł</span></div>
- <div class="menu-item"><span>7 days</span><span>8 zł</span></div>
-    <div class="menu-item"><span>Maretti Брускетты со вкусом пиццы</span><span>9 zł</span></div>
- <div class="menu-item"><span>Werther's Caramel Popcorn</span><span>24 zł</span></div>
-    <div class="menu-item"><span>Popcorn w karmelu(FUNNY SHEEP)</span><span>29 zł</span></div>
-<div class="menu-item"><span>SNIKERS</span><span>8 zł</span></div>
-
-<div class="category">NASZE DESERY:</div>
-    <div class="menu-item"><span>Orzeszki z mlekiem skondensowanym(x1)</span><span>18 zł</span></div>
-    <div class="menu-item"><span>Rurki z mlekiem skondensowanym(x1)</span><span>22 zł</span></div>
-
- 
-   <div class="category">HERBATY:</div>
-
+    <!-- COCKTAILS -->
+<div class="category">Cocktails</div>
 <div class="tea-grid">
-  <div class="tea-item">
-    <div class="tea-name">English breakfast</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Czarna herbata o klasycznym, głębokim smaku</div>
+  <div class="tea-item"><div class="tea-name">Aperol Spritz</div><div class="tea-price">35 zł</div><div class="tea-desc">Aperol, Prosecco, Sparkling water</div></div>
+  <div class="tea-item"><div class="tea-name">Sex on the Beach</div><div class="tea-price">32 zł</div><div class="tea-desc">Vodka, Peach syrup, Orange/Pineapple juice, Cranberry syrup</div></div>
+  <div class="tea-item"><div class="tea-name">Cuba Libre</div><div class="tea-price">32 zł</div><div class="tea-desc">Coca Cola, Rum, Lemon juice</div></div>
+  <div class="tea-item"><div class="tea-name">Cosmopolitan</div><div class="tea-price">32 zł</div><div class="tea-desc">Vodka, Triple sec, Lemon juice, Cranberry syrup</div></div>
+  <div class="tea-item"><div class="tea-name">Mojito</div><div class="tea-price">32 zł</div><div class="tea-desc">Rum, Mint, Lime, Sparkling water, Brown sugar</div></div>
+  <div class="tea-item"><div class="tea-name">Tequila Sunrise</div><div class="tea-price">32 zł</div><div class="tea-desc">Vodka, Orange juice, Grenadine</div></div>
+  <div class="tea-item"><div class="tea-name">Margarita</div><div class="tea-price">32 zł</div><div class="tea-desc">Tequila, Triple sec, Sugar syrup, Lemon juice</div></div>
+  <div class="tea-item"><div class="tea-name">Rafaello</div><div class="tea-price">34 zł</div><div class="tea-desc">Baileys, Sugar syrup, Coconut syrup, Milk</div></div>
+  <div class="tea-item"><div class="tea-name">Pina Colada</div><div class="tea-price">34 zł</div><div class="tea-desc">Rum, Coconut liqueur, Milk, Pineapple juice</div></div>
+  <div class="tea-item"><div class="tea-name">Long Island</div><div class="tea-price">42 zł</div><div class="tea-desc">Vodka, Rum, Tequila, Gin, Triple sec, Coca Cola, Lemon juice</div></div>
+  <div class="tea-item"><div class="tea-name">Martini Pornstar</div><div class="tea-price">42 zł</div><div class="tea-desc">Prosecco, Passion Fruit liqueur, Vodka, Vanilla syrup, Lime juice, Triple sec</div></div>
+  <div class="tea-item"><div class="tea-name">Daikiri</div><div class="tea-price">32 zł</div><div class="tea-desc">Rum, Sugar syrup, Lemon juice</div></div>
+  <div class="tea-item"><div class="tea-name">Espresso Martini</div><div class="tea-price">36 zł</div><div class="tea-desc">Vodka, Coffee liqueur, Espresso, Vanilla syrup</div></div>
+  <div class="tea-item"><div class="tea-name">Melonik</div><div class="tea-price">34 zł</div><div class="tea-desc">Midori, Lime juice, Tonic</div></div>
+</div>
+
+    <!-- COFFEE -->
+    <div class="category">Coffee</div>
+    <div class="menu-item"><span>Americano</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Cappuccino</span><span>20 zł</span></div>
+
+    <!-- SNACKS -->
+    <div class="category">Snacks</div>
+    <div class="menu-item"><span>Lay’s Oven Baked</span><span>16 zł</span></div>
+    <div class="menu-item"><span>ChePis Sticks</span><span>16 zł</span></div>
+    <div class="menu-item"><span>Siir Cheese Braid</span><span>12 zł</span></div>
+    <div class="menu-item"><span>Felix Peanuts</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Salted Pretzels</span><span>8 zł</span></div>
+    <div class="menu-item"><span>Knoppers Dark</span><span>8 zł</span></div>
+    <div class="menu-item"><span>Knoppers Coconut</span><span>8 zł</span></div>
+    <div class="menu-item"><span>7Days Croissant</span><span>8 zł</span></div>
+    <div class="menu-item"><span>Maretti Bruschette (Pizza flavor)</span><span>9 zł</span></div>
+    <div class="menu-item"><span>Werther’s Caramel Popcorn</span><span>24 zł</span></div>
+    <div class="menu-item"><span>Funny Sheep Caramel Popcorn</span><span>29 zł</span></div>
+    <div class="menu-item"><span>Snickers</span><span>8 zł</span></div>
+
+    <!-- DESSERTS -->
+    <div class="category">Desserts</div>
+    <div class="menu-item"><span>Condensed Milk Nuts (x1)</span><span>8 zł</span></div>
+    <div class="menu-item"><span>Condensed Milk Wafers (x1)</span><span>18 zł</span></div>
+
+    <!-- TEA -->
+    <div class="category">Tea</div>
+    <div class="tea-grid">
+      <div class="tea-item"><div class="tea-name">Black Tea</div><div class="tea-price">30 zł</div><div class="tea-desc">Classic breakfast tea from Ceylon & Assam</div></div>
+      <div class="tea-item"><div class="tea-name">Gunpowder Green</div><div class="tea-price">30 zł</div><div class="tea-desc">Delicate smoky flavor, refreshing</div></div>
+      <div class="tea-item"><div class="tea-name">Peach Tea</div><div class="tea-price">30 zł</div><div class="tea-desc">Juicy peach and tropical sweetness</div></div>
+      <div class="tea-item"><div class="tea-name">Mango Tea</div><div class="tea-price">30 zł</div><div class="tea-desc">Fruity blend of mango and pineapple</div></div>
+      <div class="tea-item"><div class="tea-name">Pu-Erh</div><div class="tea-price">30 zł</div><div class="tea-desc">Light fruity pu-erh tea</div></div>
+      <div class="tea-item"><div class="tea-name">Orange Tea</div><div class="tea-price">30 zł</div><div class="tea-desc">Citrus aroma, caffeine-free</div></div>
+      <div class="tea-item"><div class="tea-name">Jasmine Tea</div><div class="tea-price">30 zł</div><div class="tea-desc">Green tea with jasmine flowers</div></div>
+      <div class="tea-item"><div class="tea-name">Masala Chai</div><div class="tea-price">30 zł</div><div class="tea-desc">Spiced tea with cinnamon, ginger & cloves</div></div>
+    </div>
+
+    <!-- HANDMADE TEA -->
+    <div class="category">Handmade Tea</div>
+    <div class="tea-grid">
+      <div class="tea-item"><div class="tea-name">Sea Buckthorn & Orange</div><div class="tea-price">35 zł</div><div class="tea-desc">Sea buckthorn, orange, ginger, cinnamon, cloves, anise, sugar</div></div>
+      <div class="tea-item"><div class="tea-name">Forest Fruits</div><div class="tea-price">35 zł</div><div class="tea-desc">Berries, lemon, cloves, mint, sugar</div></div>
+      <div class="tea-item"><div class="tea-name">Cranberry Mix</div><div class="tea-price">35 zł</div><div class="tea-desc">Cranberry, raspberry, lemon, honey, sugar, mint, cinnamon</div></div>
+    </div>
+
   </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Zielony Gunpowder</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Zielona herbata o delikatnym, lekko dymnym aromacie</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Owocowy Perfect Peach</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Brzoskwinia, jabłko, papaja</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Owocowa Słodkie Mango</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Ananas, mango, jabłko, pomarańcza, truskawki, kwiatki nagietka, aromat, krokosz, barwierski</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Pu-Erh Fitness</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Herbata pu-erh, dzika róża, kawałki jabłka, yerba mate zielona, aromat, trawa cytrynowa</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Rooibos pomarańcza</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Cytryna, pomarańcza</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Jasminowa z kwiatami</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Herbata zielona, kwiatki jaśminu</div>
-  </div>
-
-  <div class="tea-item">
-    <div class="tea-name">Masala Chai</div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Cynamon, imbir, kardamon, goździki, czarny pieprz</div>
-
-<div class="tea-item">
-    <div class="tea-name">Rokitnik-pomarańcza </div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Rokitnik, pomarańcza , imbir, cynamon, goździki, anyż, cukier</div>
-
-<div class="tea-item">
-    <div class="tea-name">Owocowy miks </div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Owoce leśne, cytryna, goździki, mięta, cukier</div>
-<div class="tea-item">
-    <div class="tea-name">Żurawinowy </div>
-    <div class="tea-price">25 zł</div>
-    <div class="tea-desc">Żurawina, malina, cytryna, miód, cukier, mięta, cynamon</div>
-
-  </div>
-
-
 </body>
-
 </html>
-
