@@ -29,6 +29,17 @@
       font-size: 22px;
       font-weight: bold;
       text-transform: uppercase;
+
+.subcategory {
+  font-size: 18px;      /* trochę mniejsza */
+  font-weight: normal;
+  margin-left: 20px;    /* lekkie wcięcie */
+  color: #ccc;          /* delikatniejszy kolor */
+}
+
+.subcategory:hover {
+  color: #fff;          /* zmiana koloru po najechaniu */
+}
     }
     .menu-item {
       display: flex;
@@ -61,6 +72,28 @@
     @media (max-width: 420px) {
       .menu { width: 95vw; padding: 20px; border-width: 1.5px; }
     }
+.food-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.food-name {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.food-price {
+  font-size: 16px;
+  color: #d4af37;
+  margin-bottom: 5px;
+}
+
+.food-desc {
+  font-size: 15px;
+  color: #ccc;
+}
   </style>
 </head>
 <body>
@@ -184,10 +217,184 @@
       <div class="tea-item"><div class="tea-name">Lawenda-czarna porzecka</div><div class="tea-price">35 zł</div><div class="tea-desc">Black currant, lemon, lavender, sugar, honey, mint</div></div>
     </div>
 
+<div class="category">Kuchnia</div>
+    <div class="menu-item"><span>Placki ziemniaczane ze śmietaną (3/6 szt.)</span><span>29/35 zł</span></div>
+   
+    <div class="menu-item"><span>Frytki</span><span>20 zł</span></div>
+    <div class="menu-item"><span>Krążki cebulowe</span><span>18 zł</span></div>
+    <div class="menu-item"><span>Paluszki serowe (5/8 szt.)</span><span>15/20 zł</span></div>
+    
+    <div class="menu-item"><span>Nuggetsy (6/9 szt.)</span><span>20/30 zł</span></div>
+    
+    <div class="menu-item"><span>Stripsy z kurczaka (3/6/9 szt.)</span><span>15/20/30 zł</span></div>
+    
+    <div class="menu-item"><span>Kalmary panierowane</span><span>27 zł</span></div>
+<div class="category">Kuchnia Mix</div>
+ 
+
+<div class="food-item">
+  <div class="food-name">Mix Przekąsek Rodzinny</div>
+  <div class="food-price">~ 60 zł</div>
+  <div class="food-desc">
+    Kulki ziemniaczane, Paluszki z mozzarellą, Nuggetsy (6 szt), Panierowany kalafior
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Mega Snack Box</div>
+  <div class="food-price"> 75 zł</div>
+  <div class="food-desc">
+    Stripsy z kurczaka (9 szt), Paluszki rybne, Kalmary panierowane, Frytki
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Grill & Chill</div>
+  <div class="food-price"> 75 zł</div>
+  <div class="food-desc">
+    Stripsy z kurczaka (6 szt), Paluszki rybne, Kulki ziemniaczane, Frytki
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Light Duo</div>
+  <div class="food-price"> 40 zł</div>
+  <div class="food-desc">
+    Paluszki z mozzarellą, Krążki cebulowe
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Party Box</div>
+  <div class="food-price">90 zł</div>
+  <div class="food-desc">
+    Stripsy z kurczaka (9 szt), Kalmary panierowane, Panierowany kalafior,
+    Paluszki z mozzarellą, Frytki (duża porcja)
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Snack Party Box XL (dla ~8–10 osób)</div>
+  <div class="food-price"> 120 zł</div>
+  <div class="food-desc">
+    Placki ziemniaczane (12 szt), Frytki (ok. 1000 g), Krążki cebulowe (20–25 szt),
+    Paluszki z mozzarellą (15 szt), Nuggetsy (12 szt)
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Finger Food Box Family (dla ~10–12 osób)</div>
+  <div class="food-price"> 150 zł</div>
+  <div class="food-desc">
+    Kulki ziemniaczane (20 szt), Panierowany kalafior (15–20 szt),
+    Stripsy z kurczaka (9–12 szt), Paluszki rybne (12–15 szt),
+    Frytki (śr. porcja ~800–900 g)
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Mega Snack Box Premium (dla ~12–15 osób)</div>
+  <div class="food-price"> 200 zł</div>
+  <div class="food-desc">
+    Stripsy z kurczaka (12–15 szt), Kalmary panierowane (10–12 szt),
+    Paluszki z mozzarellą (20–25 szt), Nuggetsy (15–18 szt),
+    Frytki (duża porcja ~1200–1500 g), Krążki cebulowe (30 szt)
+  </div>
+
+
+<div class="category">Prime x Sushi Lovers </div>
+
+<div class="food-item">
+  <div class="food-name">Dragon Set 24 szt | 815 g</div>
+  <div class="food-price">206.56 PLN</div>
+  <div class="food-desc">
+    Zielony smok, Czerwony smok, Czarny smok.<br>
+    Zestaw zawiera sos sojowy, imbir i wasabi :)
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Set California Lovers 24 szt | 750 g</div>
+  <div class="food-price">160.56 PLN</div>
+  <div class="food-desc">
+    Kalifornia łosoś, Kalifornia śnieżny krab, Kalifornia pieczony łosoś.<br>
+    Zestaw zawiera sos sojowy, imbir i wasabi :)
+  </div>
+</div>
+<div class="food-item">
+  <div class="food-name">Set Studencki Premium 54 szt | 1545 g</div>
+  <div class="food-price">249.22 PLN</div>
+  <div class="food-desc">
+    Philadelphia classic, rolka z pieczonym łososiem, Turbo rolka, futo z łososiem, tamago roll, krab&ebi roll.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Vulkan Mix 8 szt | 325 g</div>
+  <div class="food-price">69.56 PLN</div>
+  <div class="food-desc">
+    Nori, ryż, serek Philadelphia, paluszek krabowy, łosoś, węgorz, czapka serowa, sos unagi.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Crispy Roll 8 szt | 275 g</div>
+  <div class="food-price">59.12 PLN</div>
+  <div class="food-desc">
+    Nori, ryż, serek Philadelphia, mango, awokado, łosoś w tempurze, sos Unagi i spicy&mayo, migdały.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Dwugłowy Smok 8 szt | 255 g</div>
+  <div class="food-price">75.12 PLN</div>
+  <div class="food-desc">
+    Ryż, nori, serek Philadelphia, krewetka w tempurze, węgorz, łosoś, sos unagi.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Kaiyo Roll 8 szt | 185 g</div>
+  <div class="food-price">76.12 PLN</div>
+  <div class="food-desc">
+    Rolka bez ryżu! Nori, serek Philadelphia, masago, tuńczyk, łosoś, ogórek, awokado, sos unagi.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Philadelphia Lux 8 szt | 310 g</div>
+  <div class="food-price">76.12 PLN</div>
+  <div class="food-desc">
+    Ryż, nori, łosoś, serek Philadelphia, ogórek, awokado, masago, sos unagi.
+  </div>
+</div>
+
+
+
+<div class="food-item">
+  <div class="food-name">Kalifornia Łosoś 8 szt | 245 g</div>
+  <div class="food-price">60.12 PLN</div>
+  <div class="food-desc">
+    Ryż, nori, kawior Masago, serek Philadelphia, łosoś, ogórek.
+  </div>
+</div>
+
+<div class="food-item">
+  <div class="food-name">Philadelphia Classic 8 szt | 275 g</div>
+  <div class="food-price">66.12 PLN</div>
+  <div class="food-desc">
+    Nori, ryż, serek Philadelphia, awokado, ogórek, łosoś.<br>
+    Zestaw zawiera sos sojowy, imbir i wasabi :)
+  </div>
+</div>
+
+</div>
+
+
+
   </div>
 </body>
 </html>
-
 
 
 
